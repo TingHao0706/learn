@@ -1,4 +1,4 @@
-class Student:
+class student:
     #constructor
     def __init__(self, name, student_id, age, gender):
         self.name = name
@@ -12,12 +12,12 @@ class Student:
 
     #get grade
     def get_grade(self):
-        return '學生成績：　' + self.grade
+        return self.grade
     
     #student info
     def display_student_info(self):
         print('name : '+ self.name)
-        print('student_id : '+ self.student_id)
-        print('age : '+ self.age)
+        print('student_id : '+ str(self.student_id))
+        print('age : '+ str(self.age))
         print('gender : '+ self.gender)
-        print('grade : '+ self.grade)
+        print('grade : '+ str(self.grade))
